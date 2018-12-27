@@ -5,3 +5,10 @@
 #header_info > .row > .col-sm > h4{
     text-align: center;
 }
+
+#content_main_wrapper{
+    padding-right: 0;
+    padding-left: 0;
+    margin-right: 10px;
+    margin-left: 10px;
+}
