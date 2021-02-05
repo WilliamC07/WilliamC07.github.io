@@ -1,43 +1,85 @@
 <!doctype html>
 <html>
   <head>
-    <title>William Cao</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <link rel="stylesheet" type="text/css" href="everything.css">
     <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+
+    <title>William Cao</title>
   </head>
   <body>
-    <!-- home -->
-    <div id="home-wrapper">
-      <h1 class="center">William Cao</h1>
-      <h3 class="center">Student</h3>
-      <nav id="home-nav" class="center">
-        <a href="#about-me-wrapper">About Me</a>
-        <a href="#skills-wrapper">Skills</a>
-        <a href="#project-wrapper">Projects</a>
-        <a href="#contact-wrapper">Contact</a>
-      </nav>
+    <header>
+      <h1 id="name-heading">William Cao</h1>
+      <a href="https://github.com/WilliamC07" target="_blank" rel=”noreferrer”>
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
+      </a>
+    </header>
+
+    <h2 class="sub-heading">Education</h2>
+    <div class="content">
+      <div class="content-heading">
+        <h3 class="name">University of Michigan</h3>
+        <p class="location">Ann Arbor, MI</p>
+        <p class="date">2020 - Present</p>
+      </div>
+      <div class="content-body">
+        <p>Computer Science Major</p>
+        <p>Relevant Courses: Data structures and Algorithms, Discrete Math</p>
+      </div>
     </div>
 
-    <!-- About me -->
-    <div id="about-me-wrapper">
-
+    <h2 class="sub-heading">Skills</h2>
+    <div class="content">
+      <p>Programming Languages: Java, Javascript/Typescript, Python, C++</p>
+      <p>Technologies: Apache Kafka, Kafka Streams, Git, Linux, Docker, Flask, React, Redux</p>
     </div>
 
-    <!-- Skills -->
-    <div id="skills-wrapper">
-
+    <h2 class="sub-heading">Experience</h2>
+    <div class="content">
+      <div class="content-heading">
+        <h3 class="name">Bloomberg</h3>
+        <p class="location">New York, New York</p>
+        <p class="date">July 2020 - August 2020</p>
+      </div>
+      <div class="content-body">
+        <p>Software Engineer Intern</p>
+        <ul>
+          <li>Designed and developed a real-time notification system in Java, leveraging a microservice architecture and Kafka Streams to send over a million notification per day</li>
+          <li>Created an isolated environment for running system and unit tests using Docker and Docker Compose</li>
+          <li>Automated running of unit and system tests with Jenkins CI system</li>
+          <li>Presented work on multiple occasions, including senior managers in the company</li>
+        </ul>
+      </div>
+    </div>
+    <div class="content">
+      <div class="content-heading">
+        <h3 class="name">Wall Street Experience</h3>
+        <p class="location">New York, New York</p>
+        <p class="date">July 2019 - Sept 2019</p>
+      </div>
+      <div class="content-body">
+        <p>Fullstack Intern</p>
+        <ul>
+          <li>Automated purchasing hundreds of tour tickets from providers using Google Sheets API and Python Selenium</li>
+          <li>Created a responsive web page in vanilla PHP and Javascript for tour guides to accurately calculate the total
+            number of guests and cost of tickets to purchase, maximizing profits and automatically generating documentation</li>
+          <li>Implemented a tool for tour guides to exchange tours on the company’s internal website using Laravel and Vue</li>
+        </ul>
+      </div>
     </div>
 
-    <!-- Projects -->
-    <div id="project-wrapper">
+    <h2 class="sub-heading">Projects</h2>
 
-    </div>
+    <h2 class="sub-heading">Contact</h2>
+    <p id="email">Email: (Click to uncover)</p>
 
-    <!-- Contact -->
-    <div id="contact-wrapper">
-
-    </div>
+    <script>
+      const e = 't92YuwWah12ZA' + 'dTbhlGbsl2dvF2Y';
+      const emailElement = document.getElementById("email");
+      emailElement.addEventListener('click', () => {
+        emailElement.innerText = 'Email: ' + atob(e.split('').reverse().join(''));
+      })
+    </script>
   </body>
 </html>

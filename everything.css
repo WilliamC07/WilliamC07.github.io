@@ -1,28 +1,71 @@
 html{
-    font-family: 'Roboto', sans-serif;
+    font-family: -apple-system,BlinkMacSystemFont,segoe ui,roboto,oxygen,ubuntu,cantarell,fira sans,droid sans,helvetica neue,sans-serif;
+    margin: 0 25%;
+    background-color: #f1f3f5;
 }
 
-h1{
-    font-size: 2.5em;
+h1 {
+    font-size: 3rem;
 }
 
-h3{
-    font-size: 1.7em;
-}
-
-#home-wrapper{
-    height: 100vh;
-    width: 100vw;
+header {
     display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-content: center;
+    align-items: baseline;
+    justify-content: space-between;
+    border-bottom: black 1px solid;
 }
 
-#home-nav{
-    margin-top: .5em;
+#name-heading {
+    margin-bottom: 0;
 }
 
-.center{
-    margin: 0 auto;
+.content {
+    margin-left: 1rem;
+}
+
+.content-heading {
+    display: flex;
+    flex-direction: row;
+    align-items: baseline;
+}
+
+.content-heading h3.name {
+    margin-bottom: 0;
+    font-weight: 600;
+}
+
+.content-heading h3.name::after {
+    content: ", ";
+}
+
+.content-heading p.location {
+    margin-left: 0.5rem;
+    margin-bottom: 0;
+    font-weight: 300;
+}
+
+.content-heading p.date {
+    margin-left: auto;
+    margin-bottom: 0;
+    font-weight: 300;
+}
+
+.content-body {
+    margin-left: 1rem;
+}
+
+.ml-1 {
+    margin-left: 1rem;
+}
+
+.indent {
+    text-indent: 1rem;
+}
+
+.sub-heading {
+    margin-bottom: 0;
+}
+
+#email {
+    cursor: pointer;
 }
