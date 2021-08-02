@@ -26,14 +26,8 @@
       </div>
       <div class="content-body">
         <p>Major: Computer Science</p>
-        <p>Relevant Courses: Data structures and Algorithms, Discrete Math</p>
+        <p>Relevant Courses: Data Structures and Algorithms, Discrete Math</p>
       </div>
-    </div>
-
-    <h2 class="sub-heading">Skills</h2>
-    <div class="content">
-      <p>Programming Languages: Java, Javascript/Typescript, Python, C++</p>
-      <p>Technologies: Apache Kafka, Kafka Streams, Git, Linux, Docker, Flask, React, Redux</p>
     </div>
 
     <h2 class="sub-heading">Experience</h2>
@@ -41,15 +35,29 @@
       <div class="content-heading">
         <h3 class="name">Bloomberg</h3>
         <p class="location">New York, New York</p>
-        <p class="date">July 2020 - August 2020</p>
       </div>
       <div class="content-body">
-        <p>Software Engineer Intern</p>
+        <div class="job-heading">
+          <p class="job-role">Software Engineer Intern</p>
+          <p class="job-date">May 2021 - July 2021</p>
+        </div>
         <ul>
-          <li>Designed and developed a real-time notification system in Java, leveraging a microservice architecture and Kafka Streams to send over a million notification per day</li>
-          <li>Created an isolated environment for running system and unit tests using Docker and Docker Compose</li>
-          <li>Automated running of unit and system tests with Jenkins CI system</li>
-          <li>Presented work on multiple occasions, including senior managers in the company</li>
+          <li>Worked on the reverse proxy that handles load-balancing, retries, and rerouting in Bloomberg’s microservice framework, which is used by over 6,000 developers and deployed on over 33,000 machines</li>
+          <li>Redesigned and decoupled a legacy fault-tolerant component of the proxy into a new sidecar process to guarantee requests are not lost for critical applications such as the internal email system</li>
+          <li>Incorporated C++ multithreading to improve separation of concerns and parallelism</li>
+          <li>Stress tested the program to ensure it can handle over 30,000 requests per second</li>
+        </ul>
+      </div>
+      <div class="content-body">
+        <div class="job-heading">
+          <p class="job-role">Software Engineer Intern</p>
+          <p class="job-date">July 2020 - August 2020</p>
+        </div>
+        <ul>
+          <li>Designed and developed a real-time notification system in Java, leveraging a microservice architecture and Kafka Streams to send a million notification on listed derivatives per day</li>
+          <li>Created an isolated environment for running integration and unit tests using Docker and Docker Compose</li>
+          <li>Automated unit and integration test execution with a Jenkins CI system</li>
+          <li>Presented work to Senior Managers on multiple occasions, demoing working examples of integration tests with Docker</li>
         </ul>
       </div>
     </div>
@@ -57,20 +65,27 @@
       <div class="content-heading">
         <h3 class="name">Wall Street Experience</h3>
         <p class="location">New York, New York</p>
-        <p class="date">July 2019 - Sept 2019</p>
       </div>
       <div class="content-body">
-        <p>Fullstack Intern</p>
+        <div class="job-heading">
+          <p class="job-role">Fullstack Intern</p>
+          <p class="job-date">July 2019 - Sept 2019</p>
+        </div>
         <ul>
           <li>Automated purchasing hundreds of tour tickets from providers using Google Sheets API and Python Selenium</li>
-          <li>Created a responsive web page in vanilla PHP and Javascript for tour guides to accurately calculate the total
-            number of guests and cost of tickets to purchase, maximizing profits and automatically generating documentation</li>
-          <li>Implemented a tool for tour guides to exchange tours on the company’s internal website using Laravel and Vue</li>
+          <li>Created a responsive web page in vanilla PHP and Javascript for tour guides to accurately calculate the total number of guests and cost of tickets to purchase, maximizing profits and automatically generating documentation</li>
+          <li>Implemented a tool for tour guides to exchange tours on the company’s internal website using Laravel and Vue, which replaced the previous manual process handled by the operations team</li>
         </ul>
       </div>
     </div>
 
     <h2 class="sub-heading">Projects</h2>
+
+    <h2 class="sub-heading">Skills</h2>
+    <div class="content">
+      <p>Programming Languages: Java, Javascript/Typescript, Python, C++</p>
+      <p>Technologies: Apache Kafka, Kafka Streams, Git, Linux, Docker, Flask, React, Redux</p>
+    </div>
 
     <h2 class="sub-heading">Contact</h2>
     <p id="email">Email: (Click to uncover)</p>
