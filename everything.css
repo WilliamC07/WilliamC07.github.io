@@ -44,9 +44,17 @@ header {
     content: "\00a0\00a0"; /* add a space */
 }
 
+.content-heading .date {
+    margin-bottom: 0;
+}
+
 .content-heading p.location {
     margin-bottom: 0;
     font-weight: 300;
+}
+
+.content-heading .date {
+    margin-left: auto;
 }
 
 .job-heading {
@@ -82,4 +90,8 @@ header {
 
 #email {
     cursor: pointer;
+}
+
+.spacer {
+    height: 10vh;
 }
