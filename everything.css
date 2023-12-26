@@ -1,8 +1,6 @@
-@media only screen and (min-width: 768px) {
-    html {
-        margin: 0 25%;
-    }
-}
+/* some designs taken from:
+ * blog.royalsloth.eu
+ */
 
 html{
     /* font-family and background color taken from: devhints.io */
@@ -12,94 +10,84 @@ html{
 
 h1 {
     font-size: 3rem;
+    margin: 0;
+}
+
+h2 {
+    font-size: 2rem;
+    margin-bottom: 0;
+}
+
+header {
+    display: flex;
+    align-items: baseline;
+    max-width: 45rem; 
+    justify-content: space-between;
+    margin: 0 auto;
 }
 
 header a {
     text-decoration: none;
 }
 
-header {
-    display: flex;
-    align-items: baseline;
-    justify-content: space-between;
-    border-bottom: black 1px solid;
+.light-text {
+    font-weight: 300;
 }
 
-#name-heading {
-    margin-bottom: 0;
+hr {
+    max-width: 45rem; 
+    margin: 0 auto;
 }
 
-.content {
-    margin-left: 1rem;
+main {
+    max-width: 45rem; 
+    margin: 0 auto;
 }
 
-.content-heading {
-    display: flex;
-    flex-direction: row;
-    align-items: baseline;
+ul {
+    margin: 0;
 }
 
-.content-heading h3.name {
-    margin-bottom: 0;
-    font-weight: 600;
+li {
+    margin: 0;
 }
 
-.content-heading h3.name::after {
+.experience > h3:first-of-type {
+    margin: 0;
+}
+
+.job-header h3::after {
     content: "\00a0\00a0"; /* add a space */
 }
 
-.content-heading .date {
-    margin-bottom: 0;
-}
-
-.content-heading p.location {
-    margin-bottom: 0;
-    font-weight: 300;
-}
-
-.content-heading .date {
-    margin-left: auto;
-}
-
-.courses-container {
+.job-header {
     display: flex;
+    align-items: baseline;
 }
 
-.job-heading {
+.text-date-div {
     display: flex;
     justify-content: space-between;
+    align-items: center;
 }
 
-.job-role {
-    margin-bottom: 0;
+.pad-left {
+    padding: 0 0 0 1rem;
 }
 
-.job-date {
-    margin-left: auto;
-    margin-bottom: 0;
-    font-weight: 300;
+.margin-top {
+    margin: 1rem 0 0 0;
 }
 
-.content-body {
-    margin-left: 1rem;
+.no-margin-top {
+    margin-top: 0;
 }
 
-.ml-1 {
-    margin-left: 1rem;
+.no-margin {
+    margin: 0;
 }
 
-.indent {
-    text-indent: 1rem;
-}
 
-.sub-heading {
-    margin-bottom: 0;
-}
-
-#email {
-    cursor: pointer;
-}
-
-.spacer {
-    height: 10vh;
+footer {
+    min-height: 20vh;
 }
